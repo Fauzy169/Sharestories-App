@@ -1,4 +1,3 @@
-// offline-db.js
 const DB_NAME = 'StoryAppOfflineDB';
 const STORE_NAME = 'stories';
 
@@ -27,5 +26,10 @@ export const saveStoryOffline = async (story) => {
 
 export const getOfflineStories = async () => {
   const db = await openDB();
-  return db.transaction(STORE_NAME).objectStore(STORE_NAME).getAll();
+  return new Promise((resolve) => {
+    const tx = db.transaction(STORE_NAME, 'readonly');
+    const request = tx.objectStore(STORE_NAME).getAll();
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => resolve([]);
+  });
 };

@@ -3,7 +3,7 @@ import CONFIG from '../../config';
 import { getStories, getStoriesWithLocation } from '../../data/api';
 import { showFormattedDate } from '../../utils';
 import { initMap, addMarkers } from '../../utils/map';
-import { getOfflineStories } from '../data/offline-db';
+import { getOfflineStories } from '../../data/offline-db';
 
 export default class StoryPage {
   constructor() {
@@ -51,7 +51,7 @@ export default class StoryPage {
     const offlineStories = await getOfflineStories();
     this.renderStories(offlineStories);
   }
-  
+
     try {
       await this._initMap();
       await this._presenter.loadStories();
