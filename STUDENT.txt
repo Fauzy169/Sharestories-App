@@ -1,0 +1,5 @@
+STUDENT_NAME: AHMAD FAUSI FEBRIAN
+STUDENT_EMAIL: fc135d5y0026@student.devacademy.id
+STUDENT_ID: FC135D5Y0026
+MAP_SERVICE_API_KEY: PJJzdTS3sMYydnGU89hq 
+URL Deployment: https://github.com/Fauzy169/Sharestories-App.git
