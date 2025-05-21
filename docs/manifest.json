@@ -1,0 +1,35 @@
+{
+  "name": "StoryShare",
+  "short_name": "StoryShare",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "label": "Desktop View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Story",
+      "url": "/add-story",
+      "icons": [{ "src": "/icons/add-icon.png", "sizes": "96x96" }]
+    }
+  ]
+}
